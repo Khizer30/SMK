@@ -1,0 +1,11 @@
+# Build
+dist
+
+# Types
+.astro
+
+# Dependencies
+node_modules
+
+# Environment Variables
+.env
