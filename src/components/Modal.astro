@@ -1,0 +1,65 @@
+---
+interface Props
+{
+  name: string ;
+  image: string ;
+  text: string ;
+  link: string ;
+  websiteType: boolean ;
+  github: string ;
+}
+
+const { name, image, text, link, websiteType, github } = Astro.props ;
+---
+
+<a href={ `#${ image }` } data-bs-toggle="modal" class="d-block mx-auto portfolio-item">
+  <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+    <div class="text-center text-white my-auto portfolio-item-caption-content w-100">
+      <i class="fa fa-search-plus fa-3x"></i>
+    </div>
+  </div>
+  <img 
+    src={ `/images/portfolio/${ image }.webp` }
+    alt={ name }
+    loading="eager" 
+    draggable="false"
+    class="img-fluid" 
+  />
+</a>
+
+<div id={ image } role="dialog" tabindex="-1" class="modal fade text-center">
+  <div role="document" class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header"></div>
+
+      <div class="modal-body">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-uppercase text-secondary mb-0"> { name } </h2>
+              <hr class="star-dark mb-5" />
+              <img 
+                src={ `/images/portfolio/${ image }.webp` }
+                alt={ name }
+                loading="eager" 
+                draggable="false"
+                class="img-fluid mb-5" 
+              />
+              <p class="mb-5"> { text } </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer pb-5">
+        <a href={ link } target="_blank" role="button" class="btn btn-primary btn-lg mx-auto rounded-pill"> { websiteType ? "Website" : "Download" } </a>
+        <a role="button" data-bs-dismiss="modal" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss">
+          <i class="fa fa-close"></i>
+        </a>
+        <a href={ github } target="_blank" role="button" class="btn btn-primary btn-lg mx-auto rounded-pill"> GitHub </a>
+      </div>
+    </div>
+
+  </div>
+</div>

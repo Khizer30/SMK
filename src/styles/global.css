@@ -1,0 +1,78 @@
+/* Default */
+h1
+{
+  cursor: default ;
+}
+
+h2
+{
+  cursor: default ;
+}
+
+h4
+{
+  cursor: default ;
+}
+
+span
+{
+  cursor: default ;
+}
+
+small
+{
+  cursor: default ;
+}
+
+p
+{
+  cursor: default ;
+}
+
+/* Main */
+.mainImg 
+{
+  min-height: 13rem ;
+  max-height: 13rem ;
+  min-width: 13rem ;
+  max-width: 13rem ;
+  background: #2C3E50 ;
+  border-radius: 30rem ;
+  border: 1px solid #2C3E50 ;
+}
+
+/* Skills */
+.skillsColumn 
+{
+  padding: 6px 12px ;
+}
+
+.skillsImg 
+{
+  margin: 0px 6px ;
+}
+
+/* Footer */
+.email
+{
+  color: #FFFFFF ;
+  text-decoration: none ;
+}
+
+.footerBtn 
+{
+  min-width: 50px ;
+  max-width: 50px ;
+  min-height: 50px ;
+  max-height: 50px ;
+  border-style: none ;
+}
+
+.footerIcon 
+{
+  font-size: 50px ;
+  min-width: 50px ;
+  max-width: 50px ;
+  min-height: 50px ;
+  max-height: 50px ;
+}
