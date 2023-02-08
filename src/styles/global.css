@@ -55,6 +55,17 @@ p
 .skillsImg 
 {
   margin: 0px 6px ;
+  transition: all ease-in 200ms ;
+}
+
+.skillsImg:hover
+{
+  transform: scale(0.90) ;
+}
+
+.skillsImg:active
+{
+  transform: scale(0.95) ;
 }
 
 /* Footer */
