@@ -29,6 +29,11 @@ p
   cursor: default ;
 }
 
+.text-justify
+{
+  text-align: justify ;
+}
+
 /* Main */
 .mainImg 
 {
