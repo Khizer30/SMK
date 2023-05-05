@@ -3,19 +3,18 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "scripts": 
+  "scripts":
   {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
-  "dependencies": 
+  "dependencies":
   {
     "@fontsource/lato": "^4.5.10",
     "@fontsource/montserrat": "^4.5.14",
     "astro": "^2.0.6",
-    "astro-compress": "^1.1.29",
-    "sharp": "^0.31.3"
+    "astro-compress": "^1.1.29"
   }
 }
